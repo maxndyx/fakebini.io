@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Collaboration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #976e6e;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            position: relative; /* Added to position the link relative to this container */
+        }
+        h1 {
+            text-align: center;
+            color: #ae5e88; 
+            font-weight: bold; 
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 8px;
+            background-size: cover; 
+            background-position: center; 
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            height: 400px; 
+            max-width: 250px; 
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url('your-image-url.jpg'); 
+            color: white; 
+        }
+        .box img {
+            width: 100px; 
+            height: 100px;
+            border-radius: 50%; 
+            object-fit: cover;
+            margin-bottom: 15px; 
+        }
+        .box .text-content {
+            text-align: left;
+            padding: 10px;
+            flex-grow: 1; 
+            background-color: rgba(190, 102, 123, 0.5); 
+            border-radius: 5px;
+        }
+        .name {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .text-content p {
+            margin: 10px 0;
+            color: #fff; 
+            line-height: 1.4;
+            font-size: 14px; 
+            overflow-y: auto; 
+            max-height: 180px; 
+        }
+        .back-link {
+            position: absolute;
+            bottom: 10px; /* Adjust to move up or down */
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: 40px; /* Adjust width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .back-link img {
+            width: 100%; /* Adjust width for responsiveness */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Collaboration</h1>
+        <div class="grid">
+            <div class="box" style="background-image: url('pictures/hehehe.png');">
+                <img src="pictures/70.png" alt="Image representing collaboration 1">
+                <div class="text-content">
+                    <p class="name">MA. MANDY NICOLE FRANCO</p>
+                    <p>I contributed to our project by enhancing the webpage design and functionality, adding custom codes to implement interactive features, and optimizing the user experience. My role included refining visual elements and ensuring responsiveness across devices. Additionally, I edited the video showcasing our college life, organizing raw footage, adding transitions, and effects to create a polished and engaging narrative.</p>
+                </div>
+            </div>
+            <div class="box" style="background-image: url('pictures/hehehe.png');">
+                <img src="pictures/71.png" alt="Image representing collaboration 2">
+                <div class="text-content">
+                    <p class="name">MIKAELA SABIDO</p>
+                    <p>I started all the necessary components for this project, such as the HTML and CSS coding, and I was the one who created and organized the website's general design. Additionally, I shot several pictures that my members wanted, particularly for a lot of school-related events. My group members and I are able to successfully implement what we had planned with their assistance.</p>
+                </div>
+            </div>
+            <div class="box" style="background-image: url('pictures/hehehe.png');">
+                <img src="pictures/72.png" alt="Image representing collaboration 3">
+                <div class="text-content">
+                    <p class="name">MARK KERBY LAGUADOR</p>
+                    <p>What I contributed to our website is the About section, which if you click it, it will show a four pictures of each members and It’s also a clickable and when you tried to click it it will pop up a small box that has the personal information of each member like birthday, full name, interests, and hobbies. The reason I help on the About is because that’s the only code I can do since I’m having problems when I will do the other things like gallery, etc. I’ve also encountered some errors which make me feel stressed but when I fix the errors it makes me happy and I enjoy doing coding again.</p>
+                </div>
+            </div>
+            <div class="box" style="background-image: url('pictures/hehehe.png');">
+                <img src="pictures/73.png" alt="Image representing collaboration 4">
+                <div class="text-content">
+                    <p class="name">KYLE JULIUS ABANGAN</p>
+                    <p>I contributed to our website the HTML. The HTML code defined the layout and organization of the web pages, providing the foundation for the website and content. Also, some of my photos were added to our website that contains FEU Roosevelt Halloween, Sinag Tams Activities, Pre-Christmas Activities, and etc.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Moved the back link outside the .box to align with the header -->
+        <a href="inde.html#ABOUT-THE-BINIS" class="back-link">
+            <img src="pictures/home.png" alt="Back to About the BINI's">
+        </a>      
+    </div>
+</body>
+</html>

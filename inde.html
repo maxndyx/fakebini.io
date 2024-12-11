@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Chronicles: Four Lives, One Journey</title>
+    <link id="themeStylesheet" rel="stylesheet" href="./light.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 10px; 
+            padding: 20px; 
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .video-container {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .ctn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgb(91, 8, 61);
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .ctn:hover {
+            background: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">COLLEGE CHRONICLES: FOUR LIVES, ONE JOURNEY</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About The Student</a></li>
+            <li><a href="#college-life">College Life</a></li>
+            <li><a href="events.html">Gallery</a></li>
+            <li><a href="addact.html" class="ctn">Additional Contents</a></li>
+        </ul>
+        <img src="pictures/menu-btn.png" alt="Menu Button" class="menu-btn">
+    </nav>    
+    
+    <header id="home">
+        <div class="header-content">
+            <h2>BINI's College Life</h2>
+            <div class="line"></div>
+            <h1>Who's the Diva?</h1>
+            <a href="exfeurience.html" class="ctn">ExFEURience The Fun</a>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="title">
+            <h1>ABOUT THE BINI's</h1>
+            <div class="line"></div>
+        </div>
+        <button id="themeToggle" class="ctn">Switch to Dark Mode</button>
+    </section>
+    
+    <section id="about1" class="about1">
+        <div class="title">
+            <h2>Meet the Web Page's Creators. A group of four FEUR students collaborated to develop this webpage. Every one of us contributes unique experiences to our time in college.</h2>
+        </div>
+        <div class="container">
+            <div class="profile">
+                <a href="kerby.html"><img src="pictures/kerby.png" alt="Kerby"></a>
+                <p>Mark Kerby Laguador</p>
+            </div>
+            <div class="profile">
+                <a href="kyle.html"><img src="pictures/kyle.png" alt="Kyle"></a>
+                <p>Kyle Julius Abangan</p>
+            </div>
+            <div class="profile">
+                <a href="mandy.html"><img src="pictures/mandy.png" alt="Mandy"></a>
+                <p>Ma. Mandy Nicole Franco</p>
+            </div>
+            <div class="profile">
+                <a href="mika.html"><img src="pictures/mika.png" alt="Mikaela"></a>
+                <p>Mikaela Sabido</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="college-life" class="college-life">
+        <div class="title">
+            <h1>LIFE LESSONS IN THIS COLLEGE JOURNEY</h1>
+            <div class="line"></div>
+        </div>
+        <div class="college-life-content">
+            <div class="glass-effect">
+                <p>Watch us share a heartfelt short video story about our college life and the moments that shaped us.</p>
+            </div>
+            <div class="video-container" id="videoContainer">
+                <video id="collegeVideo" controls>
+                    <source src="pictures/302393AE-F7FE-4EDB-9A63-6148B36F4242.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <a href="javascript:void(0)" class="ctn" onclick="playVideo()">Watch Now</a>
+        </div>
+    </section>
+    
+    <footer style="
+        background: rgba(213, 156, 184, 0.8);
+        color: rgb(91, 8, 61);
+        padding: 20px; 
+        margin-top: 20px;
+        display: flex; 
+        justify-content: space-around; 
+        flex-wrap: wrap;
+        text-align: justify;
+        border-radius: 10px; 
+        backdrop-filter: blur(10px); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        border: 1px solid rgba(255, 182, 193, 0.3);
+    ">
+        <div style="flex: 1 1 20%; margin: 10px;">
+            <p><strong>Mark Kerby Laguador</strong></p>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/marklaguador09%40gmail.com" style="color: rgb(91, 8, 61); text-decoration: underline;">marklaguador09@gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/kirbe16_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" style="color: rgb(91, 8, 61); text-decoration: underline;">@kirbe16_</a></p>
+            <p>Contact Number: <a style="color: rgb(91, 8, 61);">09517108917</a></p>
+        </div>
+        <div style="flex: 1 1 20%; margin: 10px;">
+            <p><strong>Kyle Julius Abangan</strong></p>
+            <p>Email: <a href="mailto:kyle.abangan@gmail.com" style="color: rgb(91, 8, 61); text-decoration: underline;">kyle.abangan@gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/a_kyljuu/" target="_blank" style="color: rgb(91, 8, 61); text-decoration: underline;">@a_kyljuu</a></p>
+            <p>Contact Number: <a style="color: rgb(91, 8, 61);">0994312234</a></p>
+        </div>
+        <div style="flex: 1 1 20%; margin: 10px;">
+            <p><strong>Ma. Mandy Nicole Franco</strong></p>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/fmandynicole%40gmail.com" style="color: rgb(91, 8, 61); text-decoration: underline;">fmandynicole@gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/francomndy/profilecard/" target="_blank" style="color: rgb(91, 8, 61); text-decoration: underline;">@dyfrnx</a></p>
+            <p>Contact Number: <a style="color: rgb(91, 8, 61);">09673617951</a></p>
+        </div>
+        <div style="flex: 1 1 20%; margin: 10px;">
+            <p><strong>Mikaela Sabido</strong></p>
+            <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" style="color: rgb(91, 8, 61); text-decoration: underline;">elasabido@gmail.com</a></p>
+            < p>Instagram: <a href="https://www.instagram.com/" target="_blank" style="color: rgb(91, 8, 61); text-decoration: underline;">@mkl.sbd</a></p>
+            <p>Contact Number: <a style="color: rgb(91, 8, 61);">09161215707</a></p>
+        </div>
+    </footer>
+<div style="text-align: center; margin-top: 20px;">
+    <p>&copy; 2024 College Chronicles: Four Lives, One Journey. All Rights Reserved.</p>
+    <div style="margin-top: 10px;">
+        <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Privacy Policy</a> | 
+        <a href="#" style="color: white; margin: 0 10px; text-decoration: none;">Terms of Use</a>
+    </div>
+</div>
+    <script>
+        function playVideo() {
+            const videoContainer = document.getElementById('videoContainer');
+            const video = document.getElementById('collegeVideo');
+
+            if (videoContainer.style.display === 'none') {
+                videoContainer.style.display = 'block';
+                video.play();
+            } else {
+                videoContainer.style.display = 'none';
+                video.pause();
+            }
+        }
+
+        const themeToggle = document.getElementById('themeToggle');
+        const themeStylesheet = document.getElementById('themeStylesheet');
+
+        themeToggle.addEventListener('click', () => {
+            if (themeStylesheet.getAttribute('href') === './light.css') {
+                themeStylesheet.setAttribute('href', './dark.css');
+                themeToggle.textContent = 'Switch to Light Mode';
+            } else {
+                themeStylesheet.setAttribute('href', './light.css');
+                themeToggle.textContent = 'Switch to Dark Mode';
+            }
+        });
+    </script>  
+    <script src="/script.js"></script>
+</body>
+</html> ```html

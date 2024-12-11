@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - College Chronicles</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <div class="events-container">
+        <section class="event-section halloween">
+            <button class="show-pictures" onclick="togglePictures('halloween')">Pictures</button>
+            <div class="pictures" id="halloween">
+                <img src="pictures/kerbyhall.png" alt="Halloween 1">
+                <img src="pictures/kylehall.png" alt="Halloween 2">
+                <img src="pictures/mikahall.png" alt="Halloween 3">
+                <img src="pictures/khall.png" alt="Halloween 4">
+                <img src="pictures/mmhall.png" alt="Halloween 5">
+            </div>
+        </section>
+
+        <section class="event-section sinag-tams">
+            <button class="show-pictures" onclick="togglePictures('sinag-tams')">Pictures</button>
+            <div class="pictures" id="sinag-tams">
+                <img src="pictures/19.png" alt="Sinag Tams 1">
+                <img src="pictures/12.JPG" alt="Sinag Tams 2">
+                <img src="pictures/13.png" alt="Sinag Tams 3">
+                <img src="pictures/17.png" alt="Sinag Tams 4">
+                <img src="pictures/15.png" alt="Sinag Tams 5">
+                <img src="pictures/16.png" alt="Sinag Tams 6">
+                <img src="pictures/18.png" alt="Sinag Tams 7">
+
+
+
+            </div>
+        </section>
+
+        <section class="event-section pre-christmas">
+            <button class="show-pictures" onclick="togglePictures('pre-christmas')">Pictures</button>
+            <div class="pictures" id="pre-christmas">
+                <img src="pictures/20.png" alt="Pre-Christmas 1">
+                <img src="pictures/21.png" alt="Pre-Christmas 2">
+                <img src="pictures/22.png" alt="Pre-Christmas 3">
+                <img src="pictures/23.png" alt="Pre-Christmas 4">
+                <img src="pictures/24.png" alt="Pre-Christmas 5">
+            </div>
+        </section>
+
+        <section class="event-section group-experience">
+            <button class="show-pictures" onclick="togglePictures('group-experience')">Pictures</button>
+            <div class="pictures" id="group-experience">
+                <img src="pictures/25.png" alt="Group Experience 1">
+                <img src="pictures/26.png" alt="Group Experience 2">
+                <img src="pictures/27.png" alt="Group Experience 3">
+                <img src="pictures/28.png" alt="Group Experience 4">
+                <img src="pictures/33.png" alt="Group Experience 5">
+
+
+            </div>
+        </section>
+    </div>
+
+    <a href="inde.html" class="home-icon-container">
+        <img src="pictures/home.png" alt="Back to Home" class="home-icon">
+    </a>
+
+    <script>
+        function togglePictures(sectionId) {
+            const pictures = document.getElementById(sectionId);
+            if (pictures.style.maxHeight) {
+                pictures.style.maxHeight = null;
+                pictures.style.opacity = 0;
+            } else {
+                pictures.style.maxHeight = '500px';
+                pictures.style.opacity = 1;
+            }
+        }
+    </script>
+</body>
+</html>

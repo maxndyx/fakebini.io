@@ -1,0 +1,159 @@
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.event-section {
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(69, 9, 94, 0.2);
+    overflow: hidden; 
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.halloween {
+    background-image: url(pictures/faeurhall.png);
+}
+
+.sinag-tams {
+    background-image: url(pictures/sinagtam.png);
+}
+
+.pre-christmas {
+    background-image: url(pictures/pre-act.png);
+}
+
+.group-experience {
+    background-image: url(pictures/45.png);
+}
+
+.show-pictures {
+    padding: 10px 20px;
+    background-color: rgba(223, 201, 217, 0.5);
+    color: rgb(234, 62, 182);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.show-pictures:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.pictures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-height: 0; 
+    opacity: 0;
+    overflow: hidden;
+}
+
+.pictures img {
+    object-fit: cover;
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(163, 23, 142, 0.2);
+    transition: transform 0.3s;
+}
+
+.pictures img:hover {
+    transform: scale(1.05);
+}
+
+.home-icon-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.home-icon:hover {
+    opacity: 0.7;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9f2099;
+    padding: 20px 10px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.nav-links li {
+    text-align: center; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem; 
+    padding: 15px 30px; 
+    display: block;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 59s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.1); 
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none; 
+        background-color: #38209f;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .menu-btn {
+        display: block; 
+        cursor: pointer;
+        width: 30px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .nav-links li {
+        width: 100%; 
+    }
+}
